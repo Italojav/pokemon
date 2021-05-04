@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemones</title>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <style>
+        #pokemones {
+            background-color: mediumseagreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <div id="pokemones">
+            <h1>Tipos de Pokemones</h1>
+        </div>
+    </center>
+    <script>
+        $(document).ready(function() {
+            for (let i = 1; i < 152; i++) {
+                $("#pokemones").append(`<img src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png">`)
+            }
+        });
+    </script>
+</body>
+
+</html>
